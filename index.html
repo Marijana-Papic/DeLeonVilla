@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Leon Villa</title>
+    <meta name="keywords" content="vacation, villa, trip, Spain" />
+	<meta name="description" content="" />
+    <link rel="shortcut icon" href="assets/img/logot.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css"/>
+
+    <!-- Font awesome 5 -->
+		<script src="https://kit.fontawesome.com/1e51315847.js" crossorigin="anonymous"></script>
+
+     <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" type="text/css"/>
+</head>
+<body>
+    <!--START HEADER SECTION-->
+    <header>
+        <nav>
+            <a href="index.html"><img src="assets/img/logo.png" alt="De Leon Villa Logo."></a>
+            <ul class="nav-links" id="links">
+                <li class="active">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="#about">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#services">FACILITIES & SERVICES</a>
+                </li>
+                <li>
+                    <a href="#gallery">GALLERY</a>
+                </li>
+                <li>
+                    <a href="#contact">CONTACT</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-cover">
+            <h1>WELCOME TO DE LEON VILLA</h1>
+            <a href="#book"><p class="book-now">BOOK NOW</p></a>
+        </div>
+    </header>
+    <!--END HEADER SECTION-->
+    <!--START ABOUT SECTION-->
+    <section class="about">
+        <div id="about">
+            <h2 class="heading">ABOUT</h2>
+        </div>
+        <div class="about-section">
+            <div class="about-text">
+                <p>
+                    De Leon Villa is located in Monte Carlo. During its 10 years of existence, 
+                    it has welcomed and seen off many satisfied guests. 
+                    It spreads over two floors, a total of 200m2. 
+                    It has a large living room connected to the kitchen,
+                    s3 bedrooms with a double bed and 3 bathrooms. De Leon 
+                    Villa can accommodate up to 8 guests. Finished to such
+                    a high standard and really beautiful design details making
+                    it that much more special for you.
+                </p>
+            </div>
+            <img src="assets/img/about-img.jpg" alt="Sea view from balcony.">
+        </div>
+    </section>
+    <!--END ABOUT SECTION-->
+    <!--START SERVICES SECTION-->
+    <section class="services">
+        <div id="services">
+            <h2 class="heading">FACILITIES & SERVICES</h2>
+        </div>
+        <div class="services-section">
+            <div class="services-content">
+                <div class="services-block">
+                    <h3>INDOOR AREAS</h3>
+                    <p>&#8226 3 double rooms</p>
+                    <p>&#8226 3 bathrooms</p>
+                    <p>&#8226 Dinning area</p>
+                    <p>&#8226 Fully equipped kitchen</p>
+                    <p>&#8226 Lounge with fireplace</p>
+                </div>
+                <div class="services-block">
+                    <h3>OUTDOOR AREA</h3>
+                    <p>&#8226 Pool</p>
+                    <p>&#8226 Hydro massage</p>
+                    <p>&#8226 BBQ area</p>
+                    <p>&#8226 Dinning area</p>
+                    <p>&#8226 Bathroom with 2 showers</p>
+                </div>
+                <div class="services-block">
+                    <h3>SERVICES ON DEMAND</h3>
+                    <p>&#8226 Vehicles, boats & yachts rentals</p>
+                    <p>&#8226 Daily excursions</p>
+                    <p>&#8226 Business meetings</p>
+                    <p>&#8226 Fishing trips</p>
+                    <p>&#8226 Private cetering services</p>
+                </div>
+                <div class="services-block">
+                    <h3>SURROUNDING AREA</h3>
+                    <p>&#8226 Parking area</p>
+                    <p>&#8226 Tennis court</p>
+                    <p>&#8226 Private Lake</p>
+                    <p>&#8226 Gym</p>
+                    <p>&#8226 PLayground</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--END SERVICES SECTION-->
+    <!--START GALLERY SECTION-->
+    <section class="gallery">
+        <div id="gallery">
+            <h2 class="heading">GALLERY</h2>
+        </div>
+        <div class="full-img" id="fullImgBox">
+            <img src="assets/img/img-gallery1.jpg" id="fullImg" alt="">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <div class="img-gallery">
+            <img src="assets/img/img-gallery1.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery2.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery3.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery4.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery5.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery8.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery6.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery10.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery9.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery7.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery11.jpg" onclick="openFullImg(this.src)" alt="">
+            <img src="assets/img/img-gallery12.jpg" onclick="openFullImg(this.src)" alt="">
+        </div>
+    </section>
+    <!--END GALLERY SECTION-->
+    <!--STRAT BOOK SECTION-->
+    <section class="book">
+        <div id="book">
+            <h2 class="heading">MAKE A RESERVATION</h2>
+        </div>
+       <form class="book-form">
+            <div class="form-item">
+                <label for="checkin-date">Check In Date: </label>
+                <input type="date" id="checkin-date">
+            </div>
+            <div class="form-item">
+                <label for="checkout-date">Check Out Date: </label>
+                <input type="date" id="checkout-date">
+            </div>
+            <div class="form-item">
+                <label for="adult">Adults: </label>
+                <input type="number" min="1" max="6" value="1" id="adult">
+            </div>
+            <div class="form-item">
+                <label for="children">Children: </label>
+                <input type="number" min="1" max="5" value="1" id="children">
+            </div>
+            <div class="form-item">
+                <label for="rooms">Rooms: </label>
+                <input type="number" min="1" max="4" value="1" id="rooms">
+            </div>
+            <div class="form-item">
+                <input type="submit" class="btn" value="BOOK NOW">
+            </div>
+       </form>
+    </section>
+    <!--END BOOK SECTION-->
+    <!--START CONTACT SECTION-->
+    <section class="contact">
+        <div id="contact">
+            <h2 class="heading">CONTACT</h2>
+        </div>
+        <div class="contact-section">
+            <div class="contact-info">
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11321.435495500858!2d20.475660037103804!3d44.814253065576274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!
+                        4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwINCY0KbQoiDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1638706812256!5m2!1ssr!2srs" width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="First Name" class="contact-form-txt"/>
+                        <input type="text" placeholder="Last Name" class="contact-form-txt"/>
+                        <input type="text" placeholder="Email" required class="contact-form-txt"/>
+                        <textarea placeholder="Message" class="contact-form-txtarea"></textarea>
+                        <input type="submit" name="submit" class="contact-form-btn"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+            
+
+        </div>  
+    </section>
+    <!--END CONTACT SECTION-->
+    <!--START FOOTER SECTION-->
+    <footer class="footer">
+
+    </footer>
+    <!--END FOOTER SECTION-->
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    </script>
+    <script type=”text/javascript” src=”assets/js/main.js”> </script>
+</body>
+</html>
