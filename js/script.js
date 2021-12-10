@@ -17,7 +17,7 @@ for(let i = 0; i < slike.length; i++) {
 }
 
 //navigacija
-const hrefLink = ["#home", "#services-section", "#gallery-section", "#about-section", "#contact-section"];
+const hrefLink = ["index.html", "#services-section", "#gallery-section", "#about-section", "#contact-section"];
 const imeLink = ["Home", "Services", "Gallery", "About" , "Contact"];
 let navBar = document.querySelector(".navbar-collapse");
 let navList = `<ul class="nav navbar-nav navbar-right">`;
