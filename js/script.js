@@ -90,7 +90,7 @@ var content = `<div class="container">
         <a href="sitemap.xml" target="_blank">
             <span><i class="fas fa-sitemap"></i></span>
         </a>
-        <a href="docs.pdf" target="_blank">
+        <a href="doc.pdf" target="_blank">
             <span><i class="far fa-file"></i></span>
         </a>
           </div>
