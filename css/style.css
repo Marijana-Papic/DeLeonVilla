@@ -249,53 +249,6 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
-/* Social Section */
-#social-section {
-	padding: 30px 0;
-	background-color: #222222;
-	text-align: center;
-}
-#social-section .social ul li {
-	display: inline-block;
-	margin: 0 20px;
-}
-#social-section .social i.fa {
-	font-size: 24px;
-	padding: 4px 5px;
-	color: #fff;
-	transition: all 0.5s;
-}
-#social-section .social i.fa:hover {
-	color: #666;
-}
-.added-icons a i{
-	font-size: 24px;
-	padding: 4px 5px;
-	color: #fff;
-	transition: all 0.5s;
-}
-.added-icons a i:hover{
-		color: #666;
-}
-/* Footer */
-#footer {
-	background-color: #222222;
-	color: #777;
-	padding: 15px 0 10px 0;
-	text-align: center;
-}
-#footer p {
-	font-size: 13px;
-	margin-top: 10px;
-}
-#footer a {
-	color: #999;
-}
-#footer a:hover, a:focus {
-	text-decoration: none;
-	color: #A37A4E;
-}
-
 @media (max-width: 768px) {
 .content {
 	padding: 40% 0 0;
