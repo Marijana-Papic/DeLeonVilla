@@ -75,3 +75,28 @@ function validation(){
     }
 }
 
+//footer 
+
+var footer=document.getElementById('footer');
+var content = `<div class="container">
+<div class="row justify-content-around">
+    <div class="inner-content">
+        <a href="https://www.facebook.com/" target="_blank">
+            <span><i class="fab fa-facebook-f"></i></span>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">  
+            <span><i class="fab fa-instagram"></i></span>
+        </a>
+        <a href="sitemap.xml" target="_blank">
+            <span><i class="fas fa-sitemap"></i></span>
+        </a>
+        <a href="docs.pdf" target="_blank">
+            <span><i class="far fa-file"></i></span>
+        </a>
+          </div>
+          </div>
+        <div class="col-12">
+            <p>Copyright &copy; Marijana Papic 162/20</p>
+        </div>
+    </div></div>`;
+footer.innerHTML=content;
