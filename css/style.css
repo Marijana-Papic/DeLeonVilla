@@ -4,7 +4,6 @@ body, html {
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
-	scroll-behavior: smooth;
 }
 h1 strong {
 	font-weight: 900;
