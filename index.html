@@ -8,7 +8,7 @@
  During its 10 years of existence, it has welcomed and seen off many satisfied guests.
   It spreads over two floors, a total of 200m2.">
 <meta name="author" content="">
-<meta name="keywords" content="vacation, villa, trip, Spain" />
+<meta name="keywords" content="vacation, villa, trip, Monte Carlo, Monaco" />
 
 <!-- Favicons
     ================================================== -->
@@ -19,7 +19,6 @@
 
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css"  href="css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
 
 <!-- Font awesome 5 -->
 <script src="https://kit.fontawesome.com/1e51315847.js" crossorigin="anonymous"></script>
@@ -28,7 +27,6 @@
 <!-- Stylesheet
     ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
-<link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
 <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 <script type="text/javascript" src="js/modernizr.custom.js"></script>
@@ -45,7 +43,7 @@
 <body>
 <!-- Navigation
     ==========================================-->
-    <nav id="menu" class="navbar navbar-default">
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
       <div class="container"> 
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -235,33 +233,33 @@
     </div>
     <div class="col-md-8 col-md-offset-2">
       <h3>Leave us a message</h3>
-      <form name="sentMessage" id="contactForm" novalidate>
+      <form name="sentMessage" id="contactForm" method="get" onsubmit="return validation()">
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Name" required="required">
-              <p class="help-block text-danger"></p>
+              <input type="text" id="name" class="form-control" placeholder="Name">
+              <span id="name-error" class="text-danger font-weight-bold"></span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
-              <p class="help-block text-danger"></p>
+              <input type="email" id="email" class="form-control" placeholder="Email">
+              <span id="email-error" class="text-danger font-weight-bold"></span>
             </div>
           </div>
           <div class="col-md-12">
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Subject" required="required">
-              <p class="help-block text-danger"></p>
+              <input type="text" id="subject" class="form-control" placeholder="Subject">
+              <span id="subject-error" class="text-danger font-weight-bold"></span>
             </div>
           </div>
         </div>
         <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required></textarea>
-          <p class="help-block text-danger"></p>
+          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"></textarea>
+          <span id="message-error" class="text-danger font-weight-bold"></span>
         </div>
         <div id="success"></div>
-        <button type="submit" class="btn btn-default">SEND MESSAGE</button>
+        <button type="submit"  class="btn btn-default">SEND MESSAGE</button>
       </form>
     </div>
   </div>
@@ -292,13 +290,13 @@
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
 <script type="text/javascript" src="js/bootstrap.js"></script>
-<script type="text/javascript" src="js/SmoothScroll.js"></script>
-<script type="text/javascript" src="js/jquery.counterup.js"></script> 
+<!--<script type="text/javascript" src="js/SmoothScroll.js"></script>-->
+<script type="text/javascript" src="js/jquery.counterup.js"></script>
 <script type="text/javascript" src="js/waypoints.js"></script> 
-<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
+<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script> 
+<!--<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
+<script type="text/javascript" src="js/contact_me.js"></script>-->
 
 <!-- Javascripts
     ================================================== -->

@@ -4,6 +4,7 @@ body, html {
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #777;
+	scroll-behavior: smooth;
 }
 h1 strong {
 	font-weight: 900;
@@ -345,7 +346,7 @@ label {
     display: none;
     align-items: center;
     justify-content: center;
-    z-index: 100;
+    z-index: 2000;
 }
 .full-img img{
     width: 90%;
@@ -441,4 +442,3 @@ label {
     background-color: #EDEDED ;
     padding: 30px;
 }
-
