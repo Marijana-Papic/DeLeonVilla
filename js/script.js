@@ -100,3 +100,13 @@ var content = `<div class="container">
         </div>
     </div></div>`;
 footer.innerHTML=content;
+
+//niz
+
+var serviceText = document.getElementsByClassName("section-p-text");
+var nizText = ["3 double rooms","3 bathrooms"," Dinning area","Fully equipped kitchen","Lounge with fireplace","Pool",
+"Hydro massage","BBQ area","Dinning area","Bathroom with 2 showers","Vehicles, boats & yachts rentals","Daily excursions","Business meetings",
+"Fishing trips","Private cetering services","Parking area","Tennis court","Private Lake","Gym","Playground"]
+for (let i=0; i<nizText.length; i++){
+    serviceText[i].textContent=nizText[i];
+}
