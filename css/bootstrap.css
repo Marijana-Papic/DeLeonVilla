@@ -1306,6 +1306,7 @@ mark,
   text-align: right;
 }
 .text-center {
+  background-attachment: fixed;
   text-align: center;
 }
 .text-justify {
@@ -2996,12 +2997,14 @@ select[multiple].form-group-lg .form-control {
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover,
+/* .btn:hover,
 .btn:focus,
 .btn.focus {
+  
   color: #333;
   text-decoration: none;
-}
+
+} */
 .btn:active,
 .btn.active {
   background-image: none;
@@ -3024,6 +3027,7 @@ fieldset[disabled] .btn {
   background-color: #fff;
   border-color: #ccc;
 }
+/*
 .btn-default:hover,
 .btn-default:focus,
 .btn-default.focus,
@@ -3033,7 +3037,7 @@ fieldset[disabled] .btn {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
-}
+}*/
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
@@ -3064,21 +3068,17 @@ fieldset[disabled] .btn-default.active {
   color: #fff;
   background-color: #333;
 }
-.btn-primary {
-  color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
-}
+/*
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary.focus,
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
-  color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
-}
+  color: #000;
+  background-color: #fff;
+  border-color: #A37A4E; 
+}*/
 .btn-primary:active,
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
@@ -4387,8 +4387,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-  color: #A37A4E;
-  background-color: transparent;
+   color: #A37A4E;
+  background-color: transparent; 
 }
 .navbar-default .navbar-text {
   color: #777;
@@ -4407,19 +4407,19 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555;
   background-color: #e7e7e7;
 }
-.navbar-default .navbar-nav > .disabled > a,
+/* .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
 .navbar-default .navbar-nav > .disabled > a:focus {
   color: #ccc;
   background-color: transparent;
-}
+} */
 .navbar-default .navbar-toggle {
   border-color: #6b6b6b;
 }
-.navbar-default .navbar-toggle:hover,
+/* .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
   background-color: #ddd;
-}
+} */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: #888;
 }
