@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>De Leon Villa</title>
 <meta name="description" content="De Leon Villa is located in Monte Carlo.
  During its 10 years of existence, it has welcomed and seen off many satisfied guests.
   It spreads over two floors, a total of 200m2.">
-<meta name="author" content="">
+<meta name="author" content=""/>
 <meta name="keywords" content="vacation, villa, trip, Monte Carlo, Monaco" />
 
 <!-- Favicons
@@ -25,56 +25,101 @@
 
 
 <!-- Stylesheet
-    ================================================== -->
+  ================================================== -->
 <link rel="stylesheet" type="text/css"  href="css/style.css">
-<script type="text/javascript" src="js/modernizr.custom.js"></script>
 
 <script src="js/script.js" defer></script>
 
- <!--Owl Carousel-->
+<!-- AOS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+<!--Owl Carousel-->
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.carousel.min.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/assets/owl.theme.default.min.css">
 
-<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 <body>
-<!-- Navigation
-    ==========================================-->
-    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
-      <div class="container"> 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-          <a class="navbar-brand" href="index.html">DE LEON VILLA<strong></strong></a> </div>
-        
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" id="NavBarMP">
-          <ul class="nav navbar-nav navbar-right">
-            <!--<li><a href="#home" class="page-scroll">Home</a></li>
-            <li><a href="#services-section" class="page-scroll">Services</a></li>
-            <li><a href="#works-section" class="page-scroll">Portfolio</a></li>
-            <li><a href="#about-section" class="page-scroll">About</a></li>
-            <li><a href="#team-section" class="page-scroll">Team</a></li>
-            <li><a href="#contact-section" class="page-scroll">Contact</a></li>-->
-          </ul>
-        </div>
-        <!-- /.navbar-collapse --> 
-      </div>
-      <!-- /.container-fluid --> 
-    </nav>
 
+
+  <div class="loading">
+    <img src="img/loading.gif" alt="Loading">
+  </div>
+
+
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+        <span class="sr-only">Toggle navigation</span> 
+        <span class="icon-bar"></span> 
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> </button>
+      <a class="navbar-brand" href="index.html">DE LEON VILLA</a>
+     </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+    </div>
+  </div>
+</nav>
 <!-- Header -->
 <header class="text-center" name="home">
+  <div class="overlay"></div>
   <div class="intro-text">
     <h1>Welcome to De Leon Villa</h1>
-    <a href="#book-check" class="btn btn-default btn-lg page-scroll">BOOK NOW</a> </div>
-</header>
-
+    <button id="modal-open" class="btn btn-primary open" data-modal-target="#modal">BOOK NOW</button>
+    <!-- modal start -->
+    <div class="modal modal-hidden">
+      <div class="modal-contents">
+        <div class="modal-close-bar">
+          <span>X</span>
+        </div>
+        <h2>BOOK YOUR STAY</h2>
+        <p id="note" style="margin-bottom: 5px; color: black; text-align: left; font-size: 14px; padding: 0 20px;">
+          Due to the Covid-19 pandemic, we are closed until further notice.
+          We strive to take all precautions for your and our health.
+          <span class="show-text" style="display: inline-block;"> 
+          If you want to visit us in the next period, 
+          fill out the form and we will contact you when the whole situation calms down. 
+          Thank you for your understanding. De Leon staff.
+          </span>
+        </p>
+        <span class="btnText">Show less</span>
+        
+        <form id="book-form">
+          <div class="col-md-6">
+            <input type="text" id="modalFirstName" class="form-control" placeholder="First Name" style="margin: 3px"/>
+            <span id="modal-error-fn"></span>
+          </div>
+          <div class="col-md-6">
+            <input type="text" id="modalLastName" class="form-control" placeholder="Last Name" style="margin: 3px"/>
+            <span id="modal-error-ln"></span>
+          </div>
+          <div class="col-md-6">
+            <input type="text" id="modalNumber"class="form-control" placeholder="06xxxxxxxx" style="margin: 3px"/>
+            <span id="modal-error-number"></span>
+          </div>
+          <div class="col-md-6">
+            <select name="day" id="guests" class="form-control" style="color: #9999B3; margin: 3px">
+              <option class="opa" value="Number of guests">Number of guests</option>
+              <option class="opa" value="1">1</option>
+              <option class="opa" value="2">2</option>
+              <option class="opa" value="3">3</option>
+              <option class="opa" value="4">4</option>
+              <option class="opa" value="5">5</option>
+              <option class="opa" value="6">6</option>
+            </select>
+            <span id="modal-error-op"></span>
+          </div>
+          <div class="col-md-12">
+            <button  id="book-btn" type="submit" style="margin-top: 20px;">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- modal end -->
+  </header>
+  <!-- Header end -->
 <!-- Services Section -->
 <div id="services-section" class="text-center">
   <div class="container">
@@ -85,8 +130,8 @@
     </div>
     <div class="space"></div>
     <div class="row">
-        <div class="col-md-3 col-sm-6 service">
-        <h4>INDOOR AREAS </h4>
+      <div class="col-md-3 col-sm-6 service">
+        <h4 class="section-services-heading"></h4>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
@@ -94,7 +139,7 @@
         <p class="section-p-text"></p>
       </div>
       <div class="col-md-3 col-sm-6 service">
-        <h4>OUTDOOR AREA</h4>
+        <h4 class="section-services-heading"></h4>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
@@ -102,7 +147,7 @@
         <p class="section-p-text"></p>
       </div>
       <div class="col-md-3 col-sm-6 service">
-        <h4>SERVICES ON DEMAND</h4>
+        <h4 class="section-services-heading"></h4>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
@@ -110,7 +155,7 @@
         <p class="section-p-text"></p>
       </div>
       <div class="col-md-3 col-sm-6 service">
-        <h4>SURROUNDING AREA</h4>
+        <h4 class="section-services-heading"></h4>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
         <p class="section-p-text"></p>
@@ -129,26 +174,46 @@
       <div class="clearfix"></div>
     </div>
       <div class="full-img" id="fullImgBox">
-          <img src="" id="fullImg" alt="">
+          <img src="" id="fullImg" alt=""/>
           <span onclick="closeFullImg()">X</span>
       </div>
     <div class="img-gallery">
-        <img src="img/img-gallery1.jpg" class="slika" alt="De Leon Villa room 1.">
-        <img src="img/img-gallery2.jpg" class="slika" alt="De Leon Villa pool.">
-        <img src="img/img-gallery3.jpg" class="slika" alt="De Leon Villa outside area.">
-        <img src="img/img-gallery4.jpg" class="slika" alt="De Leon Villa fruit.">
-        <img src="img/img-gallery5.jpg" class="slika" alt="De Leon Villa room 2.">
-        <img src="img/img-gallery8.jpg" class="slika" alt="De Leon Villa coctail.">
-        <img src="img/img-gallery6.jpg" class="slika" alt="De Leon Villa food.">
-        <img src="img/img-gallery10.jpg" class="slika" alt="De Leon Villa outside area.">
-        <img src="img/img-gallery9.jpg" class="slika" alt="De Leon Villa pool.">
-        <img src="img/img-gallery7.jpg" class="slika" alt="De Leon Villa room 3.">
-        <img src="img/img-gallery11.jpg" class="slika" alt="De Leon Villa pancakes.">
-        <img src="img/img-gallery12.jpg" class="slika" alt="De Leon Villa living room.">
+        <img data-aos="zoom-in" src="img/img-gallery1.jpg" class="slika" alt="De Leon Villa room 1."/>
+        <img data-aos="zoom-in" src="img/img-gallery2.jpg" class="slika" alt="De Leon Villa pool."/>
+        <img data-aos="zoom-in" src="img/img-gallery3.jpg" class="slika" alt="De Leon Villa outside area."/>
+        <img data-aos="zoom-in" src="img/img-gallery4.jpg" class="slika" alt="De Leon Villa outside area."/>
+        <img data-aos="zoom-in" src="img/img-gallery5.jpg" class="slika" alt="De Leon Villa room 2."/>
+        <img data-aos="zoom-in" src="img/img-gallery8.jpg" class="slika" alt="De Leon Villa dining area."/>
+        <img data-aos="zoom-in" src="img/img-gallery6.jpg" class="slika" alt="De Leon Villa outside area."/>
+        <img data-aos="zoom-in" src="img/img-gallery10.jpg" class="slika" alt="De Leon Villa outside area."/>
+        <img data-aos="zoom-in" src="img/img-gallery9.jpg" class="slika" alt="De Leon Villa pool."/>
+        <img data-aos="zoom-in" src="img/img-gallery7.jpg" class="slika" alt="De Leon Villa room 3."/>
+        <img data-aos="zoom-in" src="img/img-gallery11.jpg" class="slika" alt="De Leon Villa pancakes."/>
+        <img data-aos="zoom-in" src="img/img-gallery12.jpg" class="slika" alt="De Leon Villa living room."/>
     </div>
     </div>
   </div>
 </div>
+<!-- Countdown Section -->
+
+<div class="container-fluid countdown-section">
+  <div class="overlay">
+  <div class="row">
+    <div class="col-md-12 countdown-con">
+      <p style="color: white; font-size: 16px;">Suprise Your Partner With</p>
+        <h4>VALENTINES DAY</h4>
+        <h5>50% OFF</h5>
+        <div id="timer">
+          <span id="days"></span>days
+          <span id="hours"></span>hours
+          <span id="minutes"></span>minutes
+          <span id="seconds"></span>seconds
+        </div>
+    </div>
+  </div>
+  </div>
+</div>
+
 <!-- About Section -->
 <div id="about-section">
   <div class="container">
@@ -157,33 +222,14 @@
       <hr>
       <div class="clearfix"></div>
     </div>
-    <div class="row">
-      <div class="col-md-6"> <img src="img/about.jpg" class="img-responsive"> </div>
-      <div class="col-md-6">
-        <div class="about-text">
-          <p>
-            De Leon Villa is located in Monte Carlo. During its 10 years of existence, 
-            it has welcomed and seen off many satisfied guests. 
-            It spreads over two floors, a total of 200m2.</p> 
-
-            <p>De Leon Villa has a large living room connected to the kitchen,
-            three bedrooms with a double bed and three bathrooms. De Leon 
-            Villa can accommodate up to 8 guests. Finished to such
-            a high standard and really beautiful design details making
-            it that much more special for you.
-            <p>
-            <p>
-              <a href="https://marijana-papic.github.io/marijana-papic-Portfolio/" target="_blank" class="about-author">About author</a>
-            </p>
-        </div>
-      </div>
+    <div class="row about">
+     
     </div>
   </div>
 </div>
- 
- <!-- Testemonial Section -->
+<!-- Testemonial Section -->
 <div class="section-title text-center center">
-  <h2>WHAT OUR GUESTS SAY</h2>
+  <h2>What our guests say</h2>
   <hr>
   <div class="clearfix"></div>
 </div>
@@ -242,52 +288,20 @@
           </div>
         </div>
       </div>
-    </div>
-</section>
-<!-- Check Section -->
-<section class="book">
-  <div class="section-title text-center center" id="book-check">
-    <h2>Make A Reservation</h2>
-    <hr>
-    <div class="clearfix"></div>
-  </div>
- <form class="book-form">
-      <div class="form-item">
-          <label for="checkin-date">Check In Date: </label>
-          <input type="date" id="checkin-date">
       </div>
-      <div class="form-item">
-          <label for="checkout-date">Check Out Date: </label>
-          <input type="date" id="checkout-date">
-      </div>
-      <div class="form-item">
-          <label for="adult">Adults: </label>
-          <input type="number" min="1" max="6" value="1" id="adult">
-      </div>
-      <div class="form-item">
-          <label for="children">Children: </label>
-          <input type="number" min="1" max="5" value="1" id="children">
-      </div>
-      <div class="form-item">
-          <label for="rooms">Rooms: </label>
-          <input type="number" min="1" max="4" value="1" id="rooms">
-      </div>
-      <div class="form-item">
-          <input type="submit" class="btn" value="BOOK NOW">
-      </div>
- </form>
-</section>
+    </section>
+
 <!-- Contact Section -->
 <div id="contact-section" class="text-center">
-  <div class="container">
+  <div class="container" data-aos="zoom-in">
     <div class="section-title center">
       <h2>Contact Us</h2>
       <hr>
     </div>
     <div class="col-md-8 col-md-offset-2">
       <div class="col-md-4"> <i class="fa fa-map-marker"></i>
-        <p>4321 California St,<br>
-          MOnte Carlo, Monaco 12345</p>
+        <p>4321 Monte Carlo St,<br>
+          Monte Carlo, Monaco</p>
       </div>
       <div class="col-md-4"> <i class="fa fa-envelope-o"></i>
         <p>deleonvilla@company.com</p>
@@ -304,57 +318,59 @@
           <div class="col-md-6">
             <div class="form-group">
               <input type="text" id="name" class="form-control" placeholder="Name">
-              <span id="name-error" class="text-danger font-weight-bold"></span>
+              <span id="name-error"></span>
             </div>
           </div>
           <div class="col-md-6">
             <div class="form-group">
               <input type="email" id="email" class="form-control" placeholder="Email">
-              <span id="email-error" class="text-danger font-weight-bold"></span>
+              <span id="email-error"></span>
             </div>
           </div>
           <div class="col-md-12">
             <div class="form-group">
-              <input type="text" id="subject" class="form-control" placeholder="Subject">
-              <span id="subject-error" class="text-danger font-weight-bold"></span>
+              <input type="text" id="number" class="form-control" placeholder="06xxxxxxxx">
+              <span id="number-error"></span>
             </div>
           </div>
+        <div class="col-md-12">
+          <div class="form-group">
+            <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"></textarea>
+            <span id="message-error"></span>
+          </div>
         </div>
-        <div class="form-group">
-          <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"></textarea>
-          <span id="message-error" class="text-danger font-weight-bold"></span>
-        </div>
-        <div id="success"></div>
-        <button type="submit"  class="btn btn-default">SEND MESSAGE</button>
+     </div>
+        <button type="button" class="btn btn-default" id="btnSubmitForm">SEND MESSAGE</button>
       </form>
     </div>
   </div>
 </div>
 
- <footer id="footer">
+<!-- footer -->
+<footer id="footer">
 </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
 <!-- Include all compiled plugins (below), or include individual files as needed --> 
-<script type="text/javascript" src="js/bootstrap.js"></script>
-<!--<script type="text/javascript" src="js/SmoothScroll.js"></script>-->
-<script type="text/javascript" src="js/jquery.counterup.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script> 
+<script type="text/javascript" src="js/jquery.counterup.js"></script> 
 <script type="text/javascript" src="js/waypoints.js"></script> 
-<!--<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script>-->
+<script type="text/javascript" src="js/jquery.prettyPhoto.js"></script> 
 <script type="text/javascript" src="js/jquery.isotope.js"></script> 
-<!--<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
-<script type="text/javascript" src="js/contact_me.js"></script>-->
+<script type="text/javascript" src="js/jqBootstrapValidation.js"></script> 
 
-<!-- Javascripts
-    ================================================== -->
-    
-<script type="text/javascript" src="js/main.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
- <!--Owl Carousel-->
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<!--Owl Carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.3/owl.carousel.min.js"></script>
- </body>
+</body>
 </html>
