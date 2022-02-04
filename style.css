@@ -544,7 +544,7 @@ header .overlay {
 	width: 25%;
 }
 
-/* note btn */
+/* jquery toggle */
 
 .btnText {
 	padding: 0px 20px;
@@ -555,6 +555,14 @@ header .overlay {
 	text-align: left;
 	font-weight: bold;
 }
-
-/* SLIDER */
+@media (max-width: 550px) {
+	.modal-contents {
+		width: 90%;
+	}
+}
+@media (max-width: 450px) {
+	.intro-text {
+		padding-top: 250px;
+	}
+}
 
