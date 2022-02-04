@@ -483,14 +483,6 @@ header .overlay {
 
 /* COUNTDOWN SECTION */
 
-.countdown-section{
-	margin-top: 70px;
-	background: url('../img/countdown-img.jpg') no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 400px;
-	background-color: rgba(0, 0, 0, 0.9);
-}
 .overlay {
 	height: 100%;
 	width: 100%;
@@ -504,6 +496,7 @@ header .overlay {
 	flex-direction: column;
 }
 .countdown-con{
+	padding: 30px;
 	text-align: center;
 }
 .countdown-con h4{
@@ -514,19 +507,52 @@ header .overlay {
 	font-size: 35px;
 	color: #fff;
 }
-#timer {	
-	color: #fff;
-	letter-spacing: -1px;
-  }
-  #timer span {
-	font-size: 60px;
-	color: #fff;
-	margin: 0 3px 0 15px;
-  }
-  #timer span:first-child {
-	margin-left: 0;
-  }
-
+.countdown-section {
+    margin-top: 70px;
+    background: url(../img/countdown-img.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.countdown-timer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 20vh;
+    position: relative;
+}
+.countdown-timer .content {
+    position: relative;
+    z-index: 1;
+}
+.countdown-timer .content .countdown {
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 400;
+}
+@media screen and (min-width: 480px) {
+    .countdown-timer .content .countdown {
+      font-size: 42px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .countdown-timer .content .countdown {
+      font-size: 56px;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .countdown-timer .content .countdown {
+      font-size: 72px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .countdown-timer .content .countdown {
+      font-size: 88px;
+    }
+}
+  
 /* preloader */
 
 .loading {
@@ -555,6 +581,13 @@ header .overlay {
 	text-align: left;
 	font-weight: bold;
 }
-
-/* SLIDER */
-
+@media (max-width: 550px) {
+	.modal-contents {
+		width: 90%;
+	}
+}
+@media (max-width: 450px) {
+	.intro-text {
+		padding-top: 250px;
+	}
+}

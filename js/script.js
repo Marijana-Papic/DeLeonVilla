@@ -174,41 +174,33 @@ function checkMsg() {
 
 //COUNTDOWN SECTION
 
-var timer;
+let launchDate = new Date("Feb 14, 2022 12:00:00").getTime();
 
-var compareDate = new Date();
-compareDate.setDate(compareDate.getDate() + 12); 
+let timer = setInterval(tick, 1000);
 
-timer = setInterval(function() {
-  timeBetweenDates(compareDate);
-}, 1000);
+function tick () {
+  let now = new Date().getTime();
+  let t = launchDate - now;
 
-function timeBetweenDates(toDate) {
-  var dateEntered = toDate;
-  var now = new Date();
-  var difference = dateEntered.getTime() - now.getTime();
+  if (t > 0) {
+    let days = Math.floor(t / (1000 * 60 * 60 * 24));
+    if (days < 10) { days = "0" + days; }
 
-  if (difference <= 0) {
+    let hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    if (hours < 10) { hours = "0" + hours; }
 
-    clearInterval(timer);
-  
-  } else {
-    
-    var seconds = Math.floor(difference / 1000);
-    var minutes = Math.floor(seconds / 60);
-    var hours = Math.floor(minutes / 60);
-    var days = Math.floor(hours / 24);
+    let mins = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+    if (mins < 10) { mins = "0" + mins; }
 
-    hours %= 24;
-    minutes %= 60;
-    seconds %= 60;
+    let secs = Math.floor((t % (1000 * 60)) / 1000);
+    if (secs < 10) { secs = "0" + secs; }
 
-    $("#days").text(days);
-    $("#hours").text(hours);
-    $("#minutes").text(minutes);
-    $("#seconds").text(seconds);
+    let time = `${days} : ${hours} : ${mins} : ${secs}`;
+
+    document.querySelector('.countdown').innerText = time;
   }
 }
+
 
 //BOOK NOW MODAL
 
@@ -420,4 +412,6 @@ $(window).ready(() => {
       $('.loading').remove()
   }, 3000)
 })
+
+
 
